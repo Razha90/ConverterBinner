@@ -1,0 +1,201 @@
+/*          Manajement Header       */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+:root {
+    --myBackground: #FDF5DF;
+    --myText:#5EBEC4;
+    --myHype: #F92C85;
+    --myFont: 'Josefin Sans', sans-serif;
+    --myAnotherText: #4FA095;
+    --myExampleText: #123632;
+}
+
+body {
+    background-color: var(--myBackground);
+    font-family: var(--myFont);
+    color: var(--myText);
+    margin: 0;
+}
+
+/*---------------------------------------*/
+
+.linkme {
+    
+}
+
+/*        Binner Happend         */
+.wrap-binner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.wrap-binner div {
+    width: 100%;
+    border-radius: 7px;
+    background-color: white;
+    height: 50px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrap-binner input {
+    width: 90%;
+    border: 0;
+    padding-top: 4px;
+    height: 90%;
+    font-size: 23px;
+    font-family: var(--myFont);
+    color: var(--myHype);
+}
+
+.wrap-binner p {
+    padding: 4px 3% 0;
+    margin-top: 10px;
+    width: 90px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+sub {
+    font-size: 13px;
+}
+/*------------------------------*/
+
+/*   Arrow Type Number Hidden   */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  outline: 0;
+}
+
+input[type=text] {
+    -moz-appearance: textfield;
+    outline: 0;
+    text-transform: lowercase;
+  }
+/*------------------------------*/
+
+/*          RUMUS           */
+
+#tittle-rumus {
+    margin-top: 50px;
+    text-align: center;
+    animation: fadein 2s ease-in-out;
+    transition: 1s;
+    cursor: pointer;
+}
+#tittle-rumus:hover {
+    color: #F92C85;
+}
+
+.rumus {
+    background-color: white;
+    width: 80%;
+    border-radius: 10px; 
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+    margin: 20px 5% 0 5%;
+
+}
+
+.rumus-change {
+    max-height: 1000px;
+    padding: 5%;
+
+}
+
+.pemisah {
+    border-bottom: 2px solid var(--myHype);
+    padding-bottom: 5px;
+}
+
+.pemisah .perkalian {
+    padding-left: 50px;
+    padding-top: 10px;
+    transition: 1s;
+    animation: slide 1s ease-in-out;
+}
+
+.garis {
+    color: var(--myHype);
+}
+
+.font-big {
+    text-transform: uppercase;
+}
+
+.info-text {
+    color: var(--myAnotherText);
+}
+
+.opacity {
+    opacity: 0.7;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+details summary {
+    transition: all .5s;
+    cursor: pointer;
+}
+details[open] summary{
+    color: var(--myHype);
+}
+/*---------------------------*/
+
+/* Animation */
+@keyframes sweep {
+    0%    {opacity: 0; transform: translateX(-10px)}
+    100%  {opacity: 1; transform: translateX(0)}
+}
+
+.wrap-binner div:nth-child(1) {
+    animation: slide 1s;
+}
+
+.wrap-binner div:nth-child(2) {
+    animation: slide 1.3s;
+}
+
+.wrap-binner div:nth-child(3) {
+    animation: slide 1.6s;
+}
+
+.wrap-binner div:nth-child(4) {
+    animation: slide 1.8s;
+}
+
+@keyframes slide {
+    0%    {opacity: 0; transform: translateX(-100px)}
+    100%  {opacity: 1; transform: translateX(0)}
+}
+
+@keyframes fadein {
+    from {opacity: 0; color: var(--myHype);}
+    to {opacity: 1; color:var(--myText) ;}
+}
+/*======================*/
+
+/*-========= PHONE ==========*/
+@media screen and (max-width: 400px) {
+    .pemisah .perkalian {
+        padding-left: 0;
+    }
+}
+/*===========================*/
