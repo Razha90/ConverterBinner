@@ -14,7 +14,14 @@
     <div class="loading">
         <span>Loading</span>
       </div>
-    <div class="linkme"><center><code>Code By <a href="https://www.frontendmentor.io/profile/Razha90">Razha Jamsik Syah</a></code></center></div>
+    
+        <div class="title">
+            <div class="title-one">BINARY</div>
+            <div class="title-border">
+                <div></div>
+                <div>Converter</div>
+            </div>
+        </div>
     <main>
         <div class="wrap-binner">
             <div>
@@ -38,6 +45,10 @@
         <div class="rumus">
         </div>
     </main>
+    <center>
+        <div class="linkme" style="position: fixed; bottom: 0px; left: 0; right: 0; margin: 0 auto; transition: 1s;"><code>Code By <a href="https://www.frontendmentor.io/profile/Razha90">Razha Jamsik Syah</a></code> <br>
+        <a href="https://github.com/Razha90/ConverterBinner"><code>Git Hub For See Code</code></a></div>
+    </center>
 </body>
 <script src="./src/js/script.js"></script>
 <script src="./src/js/colorAnimation.js"></script>
@@ -49,6 +60,10 @@
     $( window ).on( "load", function() {
         $("main").css("display",'block');
         $(".loading").css("display",'none');
+        setTimeout(() => {
+            $(".title-border").addClass("title-change");
+        }, 1000)
     });
-</script>
+
+    </script>
 </html>
