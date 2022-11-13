@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code by Razha Jamsik Syah</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="icon" href="./Logo Teknik.jpg">
-    <link rel="stylesheet" href="./src/css/Loading.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" href="./Logo Teknik.jpg" />
+    <link rel="stylesheet" href="./src/css/Loading.css" />
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="loading">
-        <span>Loading</span>
+      <span>Loading</span>
+    </div>
+
+    <div class="title">
+      <div class="title-one">BINARY</div>
+      <div class="title-border">
+        <div></div>
+        <div>Converter</div>
       </div>
-    
-        <div class="title">
-            <div class="title-one">BINARY</div>
-            <div class="title-border">
-                <div></div>
-                <div>Converter</div>
-            </div>
-        </div>
-        
+    </div>
+
     <main>
-        <div class="wrap-binner">
-            <div>
-                <p>Bin <sub>(2)</sub></p>
-                <input type="text" min="0" max="1" id="bin" placeholder="Binner......">
-            </div>
-            <div>
-                <p>Okt <sub>(8)</sub></p>
-                <input type="text" id="okt" placeholder="Oktal......">
-            </div>
-            <div>
-                <p>Des <sub>(10)</sub></p>
-                <input type="text" id="des" placeholder="Desimal......">
-            </div>
-            <div>
-                <p>Hex <sub>(16)</sub></p>
-                <input type="text" id="hex" placeholder="Hexadesimal......">
-            </div>
+      <div class="wrap-binner">
+        <div>
+          <p>Bin <sub>(2)</sub></p>
+          <input
+            type="text"
+            min="0"
+            max="1"
+            id="bin"
+            placeholder="Binner......"
+          />
         </div>
-        <h3 id="tittle-rumus" hidden onclick="setRumus()">Click To See RUMUS</h3>
-        <div class="rumus">
+        <div>
+          <p>Okt <sub>(8)</sub></p>
+          <input type="text" id="okt" placeholder="Oktal......" />
         </div>
+        <div>
+          <p>Des <sub>(10)</sub></p>
+          <input type="text" id="des" placeholder="Desimal......" />
+        </div>
+        <div>
+          <p>Hex <sub>(16)</sub></p>
+          <input type="text" id="hex" placeholder="Hexadesimal......" />
+        </div>
+      </div>
+      <h3 id="tittle-rumus" hidden onclick="setRumus()">Click To See RUMUS</h3>
+      <div class="rumus"></div>
     </main>
     <center>
-        <div class="linkme" style="position: fixed; bottom: 0px; left: 0; right: 0; margin: 0 auto; transition: 1s;"><code>Code By <a href="https://www.frontendmentor.io/profile/Razha90">Razha Jamsik Syah</a></code> <br>
-        <a href="https://github.com/Razha90/ConverterBinner"><code>Git Hub For See Code</code></a></div>
+      <div
+        class="linkme"
+        style="
+          position: fixed;
+          bottom: 0px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          transition: 1s;
+        "
+      >
+        <code
+          >Code By
+          <a href="https://www.frontendmentor.io/profile/Razha90"
+            >Razha Jamsik Syah</a
+          ></code
+        >
+        <br />
+        <a href="https://github.com/Razha90/ConverterBinner"
+          ><code>Git Hub For See Code</code></a
+        >
+      </div>
     </center>
-</body>
-<script src="./src/js/script.js"></script>
-<script src="./src/js/colorAnimation.js"></script>
-<script>
-   $( document ).ready(function() {
-        $("main").css("display",'none');
-    });
- 
-    $( window ).on( "load", function() {
-        $("main").css("display",'block');
-        $(".loading").css("display",'none');
-        setTimeout(() => {
-            $(".title-border").addClass("title-change");
-        }, 1000)
+  </body>
+  <script src="./src/js/script.js"></script>
+  <script src="./src/js/colorAnimation.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("main").css("display", "none");
     });
 
-    </script>
-    
+    $(window).on("load", function () {
+      $("main").css("display", "block");
+      $(".loading").css("display", "none");
+      setTimeout(() => {
+        $(".title-border").addClass("title-change");
+      }, 1000);
+    });
+  </script>
 </html>
